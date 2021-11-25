@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>onChilli.kz/mainPage</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style_main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>    
+
+</head>
+<body>
+
+
+<div class="main">
+    
+    <div class="landing">
+    <div class="nav-left">
+            <div class="">
+            <input type="checkbox" id="nav-toggle" hidden>
+
+        <nav class="nav">
+
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+
+        <h2 class="logo"> 
+            <img id="logo" src="images/onChilli_black.png">
+        </h2>
+        <ul>
+                <li><h2 id="menu">Menu</h2></li>
+                <hr>
+               
+                    
+                <nav id="menuN">    
+                <li><a id="nav_left" href="page1.html"><h3>Home</h3></a></li>
+                <li><a id="nav_left" href="index.html"><h3>About Us</h3></a></li>
+                <li><a id="nav_left" href="#t3"><h3>Music</h3></a></li>
+                <li><a id="nav_left" href="#t1"><h3>Movies</h3></a></li>
+                <li><a id="nav_left" href="#t2"><h3>Places</h3></a></li>
+                <li><a id="nav_left" href="t2"><h3>Events</h3></a></li></nav>
+        </ul>
+
+        
+        <br><h1>Hot News</h1>
+        <div class="HotNews"><h1 id="news">Billboard</h1><p>After nine people were killed at Travis Scott's #Astroworld festival last week, his brand deals, touring and music plans could all take a hit.⁠
+⁠
+A closer look at what could be next for #TravisScott, plus a breakdown of the lawsuits spurred from the event, is at the link in bio.</p></div>
+            <div class="player">
+            
+            <div class="player">
+
+    <div class="player__header">
+
+      <div class="player__img player__img--absolute slider">
+
+        <button class="player__button player__button--absolute--nw playlist">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+
+        </button>
+
+        <button class="player__button player__button--absolute--center play">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+
+        </button>
+
+        <div class="slider__content">
+
+          <img class="img slider__img" src="images/ikA.jpg" alt="cover">
+
+
+
+        </div>
+
+      </div>
+
+      <div class="player__controls">
+
+        <button class="player__button back">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+
+        </button>
+        
+        <p class="player__context slider__context">
+
+          <strong class="slider__name"></strong>
+          <span class="player__title slider__title"></span>
+
+        </p>
+
+        <button class="player__button next">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+
+        </button>
+
+        <div class="progres">
+
+          <div class="progres__filled"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <ul class="player__playlist list">
+
+      <li class="player__song">
+
+        <img class="player__img img" src='images/ikA.jpg' alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Халат</b>
+          <span class="flex">
+
+            <span class="player__title">Ирина Кайратовна</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="music/ik_H.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="images/weekndA.png" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Can`t fell my face lights</b>
+          <span class="flex">
+
+            <span class="player__title">the weeknd</span>
+            <span class="player__song-time"></span>
+
+          </span>
+          
+        </p>
+
+        <audio class="audio" src="music/The%20Weeknd%20-%20Can't%20Feel%20My%20Face.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="images/mdee-novogodnyaya.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Mdee</b>
+          <span class="flex">
+
+            <span class="player__title">Новогодняя</span>
+            <span class="player__song-time"></span>
+
+          </span>
+            
+        </p>
+
+        <audio class="audio" src="music/M'Dee%20-%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F%D1%8F.mp3"></audio>
+
+      </li>
+
+      
+
+      
+
+     
+
+
+
+    </ul>
+                
+<script>
+
+"use strict";
+
+
+const bgBody = ["#e5e7e9", "#ff4545", "#f8ded3", "#ffc382", "#f5eda6", "#ffcbdc", "#dcf3f3"];
+const body = document.body;
+const player = document.querySelector(".player");
+const playerHeader = player.querySelector(".player__header");
+const playerControls = player.querySelector(".player__controls");
+const playerPlayList = player.querySelectorAll(".player__song");
+const playerSongs = player.querySelectorAll(".audio");
+const playButton = player.querySelector(".play");
+const nextButton = player.querySelector(".next");
+const backButton = player.querySelector(".back");
+const playlistButton = player.querySelector(".playlist");
+const slider = player.querySelector(".slider");
+const sliderContext = player.querySelector(".slider__context");
+const sliderName = sliderContext.querySelector(".slider__name");
+const sliderTitle = sliderContext.querySelector(".slider__title");
+const sliderContent = slider.querySelector(".slider__content");
+const sliderContentLength = playerPlayList.length - 1;
+const sliderWidth = 100;
+let left = 0;
+let count = 0;
+let song = playerSongs[count];
+let isPlay = false;
+const pauseIcon = playButton.querySelector("img[alt = 'pause-icon']");
+const playIcon = playButton.querySelector("img[alt = 'play-icon']");
+const progres = player.querySelector(".progres");
+const progresFilled = progres.querySelector(".progres__filled");
+let isMove = false;
+
+function openPlayer() {
+
+    playerHeader.classList.add("open-header");
+    playerControls.classList.add("move");
+    slider.classList.add("open-slider");
+    
+}
+
+function closePlayer() {
+
+    playerHeader.classList.remove("open-header");
+    playerControls.classList.remove("move");
+    slider.classList.remove("open-slider");
+    
+}
+
+function next(index) {
+    
+    count = index || count;
+
+    if (count == sliderContentLength) {
+        count = count;
+        return;
+    }
+
+    left = (count + 1) * sliderWidth;
+    left = Math.min(left, (sliderContentLength) * sliderWidth);
+    sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+    count++;
+    run();
+
+}
+
+function back(index) {
+    
+    count = index || count;
+
+    if (count == 0) {
+        count = count;
+        return;
+    }
+    
+    left = (count - 1) * sliderWidth;
+    left = Math.max(0, left);
+    sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+    count--;
+    run();
+
+}
+
+function changeSliderContext() {
+
+    sliderContext.style.animationName = "opacity";
+    
+    sliderName.textContent = playerPlayList[count].querySelector(".player__title").textContent;
+    sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name").textContent;
+    
+    if (sliderName.textContent.length > 16) {
+        const textWrap = document.createElement("span");
+        textWrap.className = "text-wrap";
+        textWrap.innerHTML = sliderName.textContent + "   " + sliderName.textContent;  
+        sliderName.innerHTML = "";
+        sliderName.append(textWrap);
+        
+    }
+
+    if (sliderTitle.textContent.length >= 18) {
+        const textWrap = document.createElement("span");
+        textWrap.className = "text-wrap";
+        textWrap.innerHTML = sliderTitle.textContent + "    " + sliderTitle.textContent;  
+        sliderTitle.innerHTML = "";
+        sliderTitle.append(textWrap);
+    }
+
+}
+
+function changeBgBody() {
+    body.style.backgroundColor = bgBody[count];
+}
+
+function selectSong() {
+
+    song = playerSongs[count];
+
+    for (const item of playerSongs) {
+
+        if (item != song) {
+            item.pause();
+            item.currentTime = 0;
+        }
+
+    }
+
+    if (isPlay) song.play();
+    
+    
+}
+
+function run() {
+  
+    changeSliderContext();
+    changeBgBody();
+    selectSong();
+  
+}
+
+function playSong() {
+
+    if (song.paused) {
+        song.play();
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "block";
+
+    }else{
+        song.pause();
+        isPlay = false;
+        playIcon.style.display = "";
+        pauseIcon.style.display = "";
+    }
+
+
+}
+
+function progresUpdate() {
+
+    const progresFilledWidth = (this.currentTime / this.duration) * 100 + "%";
+    progresFilled.style.width = progresFilledWidth;
+
+    if (isPlay && this.duration == this.currentTime) {
+        next();
+    }
+    if (count == sliderContentLength && song.currentTime == song.duration) {
+        playIcon.style.display = "block";
+        pauseIcon.style.display = "";
+        isPlay = false;
+    }
+}
+
+function scurb(e) {
+
+
+    const currentTime = ( (e.clientX - progres.getBoundingClientRect().left) / progres.offsetWidth ) * song.duration;
+    song.currentTime = currentTime;
+
+}
+
+function durationSongs() {
+
+    let min = parseInt(this.duration / 60);
+    if (min < 10) min = "0" + min;
+
+    let sec = parseInt(this.duration % 60);
+    if (sec < 10) sec = "0" + sec;
+    
+    const playerSongTime = `${min}:${sec}`;
+    this.closest(".player__song").querySelector(".player__song-time").append(playerSongTime);
+
+}
+
+
+changeSliderContext();
+
+sliderContext.addEventListener("click", openPlayer);
+sliderContext.addEventListener("animationend", () => sliderContext.style.animationName ='');
+playlistButton.addEventListener("click", closePlayer);
+
+nextButton.addEventListener("click", () => {
+    next(0)
+});
+
+backButton.addEventListener("click", () => {
+    back(0)
+});
+
+playButton.addEventListener("click", () => {
+    isPlay = true;
+    playSong();
+});
+
+playerSongs.forEach(song => {
+    song.addEventListener("loadeddata" , durationSongs);
+    song.addEventListener("timeupdate" , progresUpdate);
+    
+});
+
+progres.addEventListener("pointerdown", (e) => {
+    scurb(e);
+    isMove = true;
+});
+
+document.addEventListener("pointermove", (e) => {
+    if (isMove) {
+        scurb(e); 
+        song.muted = true;
+    }
+});
+
+document.addEventListener("pointerup", () => {
+    isMove = false;
+    song.muted = false;
+});
+
+playerPlayList.forEach((item, index) => {
+
+    item.addEventListener("click", function() {
+
+        if (index > count) {
+            next(index - 1);
+            return;
+        }
+        
+        if (index < count) {
+            back(index + 1);
+            return;
+        }
+
+    });
+    
+});
+                
+                
+    function time(){
+      var now = new Date();
+        
+    }            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                
+                </script>
+
+  </div>
+                
+            
+            
+            </div></nav>
+        </div>
+
+</div>
+                    
+              
+                
+                    
+
+        
+        
+        
+        
+        
+        
+        <h1 id="Welcome">Welcome!</h1>
+        
+
+        
+
+        
+    <div class="blocks">
+
+        <div class="widget1"><div id="text"><h1>Places worth visiting</h1><p>We all know how important the art of living your day beautifully is, it sets the steep rhythm of the day, which affects your life as a whole!
+
+            It is real to meet and spend your day beautifully and tasty with @loko_almaty.</p><br><a href="https://www.instagram.com/loko_almaty/">Go!</a></div></div>
+        <div class="widget2"><div id="text"><h1>Movies for the weekend</h1><p>The life and reputation of Peter Parker are in jeopardy as Mysterio has revealed the secret of Spider-Man's identity to the world. </p><br><a href="https://www.youtube.com/watch?v=V0hagz_8L3M">Explore!</a></div></div>
+        <div class="widget3"><div id="text"><h1>  Playlist of your mood</h1><p>Although risks are taken with her sound — '30' includes some of the most dizzying uptempo songs of #Adele’s career — they are bypassed by her commitment to lyrical honesty.⁠</p><br><a href="https://www.youtube.com/watch?v=U3ASj1L6_sY">Listen!</a></div></div>
+
+    </div>
+    </div>
+    
+    
+    <div class="main">
+        
+        <div  class="films" id="t1">
+
+            <img id="logo1" src="images/onChilli.png">
+            <h2 id="films">A selection of the best films for every day.</h2><br>
+            
+            <div class="blokii">
+            
+                <div class="mainBlock"><button onclick="" type="button" >Watch!</button></div>
+                <div class="asideBlock"><h1 id="asideText">Movies for the weekend</h1><p id="asideText1">
+Our editors are always on guard and are always ready to discard films that would not be worthy of your attention.
+That is why this part of the site was created.
+Here you can quickly and easily find something for yourself in the field of cinema and series.</p></div>
+                
+                
+            </div>
+            
+            <div class="Blockii">
+                <div class="miniiblock"><div class="miniblock1"></div>
+                <h1>Lucifer</h1>
+                    <p>Rating 4/5 star<br>fantasy television program<br>Episodes: 93 (list of episodes)</p><br>
+                    <a href="" id="aFilms">Watch!</a>
+                </div>               
+                
+                <div class="miniiblock"><div class="miniblock2"></div>
+                <h1>Joker</h1>
+                    <p>Rating 4.5/5 star<br>Crime / Drama<br>122 mnute.</p><br>
+                    <a href="" id="aFilms">Watch!</a>
+                </div>               
+                
+                <div class="miniiblock"><div class="miniblock3"></div>
+                <h1>Squid game</h1>
+                    <p>Rating 5/5 star<br>Drama, Thriller, Horror Literature
+                        <br>Episodes: 9</p><br><a href="" id="aFilms">Watch!</a>
+                </div>
+                
+>
+            
+            </div>
+            
+        
+        </div>
+        
+
+    
+    </div>
+    
+    
+    <div class="container" id="t2">
+      <div class="block_1">
+        <div class="content">
+          <div class="side_1">
+            <div class="description">
+              <h1>Where to go?</h1>
+              <p>best recommendations for what to visit from <b>onChilli</b> </p>
+
+            </div>
+
+            <div class="timeBlock">
+                <img src="images/onChilli_black.png">
+                <p></p>
+            </div>
+          </div>
+
+          <div class="side_2">
+            <div id="slider" class="slider_block">
+               <img src="images/pasta.png" alt="">
+               <img src="images/irwin.png" alt="">
+               <img src="images/burger.png" alt="">
+               <img src="images/nyhe.png" alt="">
+           </div>
+          </div>
+        </div>
+
+        <p class="footerText">Usually in Almaty, as in the largest metropolis of Kaakhstan, it is difficult to keep track of places and establishment that open with rnviable regularity. <br>
+          That is why our editorial staff always selects the best establishments for your leisure time.
+         </p>
+
+      </div>
+
+
+      <div class="block_2" id="t3">
+        <div class="side_3">
+          <h1>onChilli</h1>
+        </div>
+        <div class="side_4">
+            <img class="logo" src="images/onChilli.png">
+          <p class="not">what is hot</p>
+          <h1>Trending</h1>
+          <div class="artistBlock">
+            <div class="forFlex">
+              <p class="artist">Artist</p>
+              <p class="artistName">Traviss</p>
+            </div>
+            <p class="top">TOP all over the world</p>
+            <button class="btn active"type="button" name="button">Play</button>
+            <button class="btn" type="button" name="button"> Follow </button>
+              
+              
+              
+              
+          </div>
+
+          <p class="playlist">Playlist</p>
+          <hr>
+          <ul>
+            <li>01 Adele - Easy On Me</li>
+            <li>02 The Kid LAROI & Justin Bieber- Stay</li>
+            <li>03 Lil Nas X & Jack Harlow - Industry Baby</li>
+            <li>04 Ed Sheeran - Bad Habits</li>
+            <li>05 Ed Sheeran - Shivers</li>
+            <li>06 Post Malone & The Weeknd - One Right Now</li>
+              
+            
+              
+             
+
+          </ul>
+
+            
+            
+
+
+
+        </div>
+          
+                       <div class="players">
+              
+              
+            <div class="player_footer1">
+                <div class="imgBx">
+                    <h1>Mdee - Новогодняя</h1>
+                    <img src="images/mdeeA.jpg">
+                <audio  controls><br>
+                <source src="music/M'Dee%20-%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F%D1%8F.mp3" type="audio/mp3">
+                    
+                </audio> </div>
+
+              
+
+              </div>
+          </div>
+            
+            
+          <div class="whiteBlock">
+
+          </div>
+        </div>
+                        
+                        <div class="footeer">
+        </div>
+
+        
+        
+    
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+           
+</div>
+
+    
+    
+  
+</body>
+</html>

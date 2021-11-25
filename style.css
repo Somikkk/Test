@@ -1,0 +1,195 @@
+body{
+
+    background-image: url(images/page1_bg.jpg); 
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+}
+
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav a{
+    margin-left: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover{
+    color:gold;
+    transition: 0.3s;
+}
+
+#quotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 100px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    
+}
+
+#logo{
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+#infologo{
+    text-align: left;
+    color: white;
+    width: 700px;
+}
+
+.widget1{
+   background-image: url(images/widget1_page1.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 320px;
+    
+}
+
+
+.widget2{
+    
+   background-image: url(images/RTR.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 320px;
+    
+}
+.widget3{
+   background-image: url(images/widget3_page1.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 320px;
+}
+.widget4{
+   background-image: url(images/widget4_page1.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 320px;
+}
+
+.infoW{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 250px;
+}
+
+.infoWP{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.infoW h2{
+    font-weight: 600;
+}
+
+#btnInfoW{
+    margin-left: 95px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+}
+
+#btnInfoW:hover{
+    background-color: gold;
+    transition: 0.4s;
+}
+
+#slider{ 
+margin-top: -300px;
+margin-left: 44%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+    
+.window{
+margin-top: 50px;
+width: 100%;
+}
+
+.swiper {
+width: 600px;
+height: 300px;
+}
+
+.infoFooter{
+    color: white;
+    margin-left: 48%;
+    text-align: right;
+    width: 960px; 
+}
+
+
+.slider-nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Стили для стрелочек управления */
+.a-left.control-c.prev.slick-prev.slick-arrow,
+.a-right.control-c.next.slick-next.slick-arrow {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d4d4d4;
+  border-radius: 100%;
+  padding: 10px 10px;
+  box-shadow: 0 0 10px #00000036;
+  background-color: #fff;
+  z-index: 99;
+}
+
+/* Отступы стрелочек Десктоп */
+.slick-prev {
+    left: -60px !important;
+}
+
+ .slick-next {
+    right: -60px !important;
+}
+
+/* Отступы стрелочек для планшетов и моб */
+@media screen and (max-width: 1280px) {
+  .slick-prev {
+    left: -30px !important;
+  } 
+
+  .slick-next {
+    right: -30px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slick-prev {
+    left: 0px !important;
+  } 
+
+  .slick-next {
+    right: 0px !important;
+  }
+  /* Размер стрелочек в моб. версии */
+  .a-left.control-c.prev.slick-prev.slick-arrow,
+  .a-right.control-c.next.slick-next.slick-arrow {
+    width: 12px;
+    height: 12px;
+  }
+}

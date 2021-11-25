@@ -1,0 +1,283 @@
+
+html , body{
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+ 
+
+.block_1{
+  background: linear-gradient(to top,rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8)), url(../images/mountain.jpeg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+
+}
+
+
+.content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.description{
+  margin-top: 80px;
+  width: 250px;
+}
+
+.description p{
+
+  width: 200px;
+  line-height: 1.6;
+
+}
+.description p , h1{
+  margin: 0;
+  padding: 0;
+}
+.slider_block{
+  width: 850px;
+  height: 500px;
+  margin-top: 40px;
+  margin-right: 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+.slider_block img {
+  width: 850px;
+  height: 500px;
+  border-radius: 20px;
+}
+.side_1{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.timeBlock{
+  margin-top: 270px;
+  width: 200px;
+  height: 100px;
+  background: white;
+  border-radius: 15px;
+}
+
+.footerText{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.a-left.control-c.prev.slick-prev.slick-arrow,
+.a-right.control-c.next.slick-next.slick-arrow {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d4d4d4;
+  border-radius: 100%;
+  padding: 10px 10px;
+  box-shadow: 0 0 10px #00000036;
+  background-color: #fff;
+  z-index: 99;
+}
+
+
+/* second block css */
+.block_2{
+  background: linear-gradient(to top,rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8)), url(../images/mountain.jpeg) no-repeat center center;
+  background-size: cover;
+   min-height: 100vh;
+   display: flex;
+  flex-direction: row;
+
+
+}
+
+.side_4{
+  width:650px;
+  margin-right: 100px;
+}
+
+.side_4 .not{
+  padding: 0;
+  margin: 30px 0 0 95px ;
+  font-size: 14px;
+
+}
+
+.side_4 h1{
+  font-size:40px;
+  font-weight: bold;
+}
+
+.side_3 h1{
+  font-size:40px;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 48px;
+  margin-right: 100px;
+}
+
+hr{
+  height: 2px;
+  background: white;
+}
+
+.playlist{
+  font-size: 30px;
+}
+
+ul li {
+  opacity: .8;
+}
+
+.artistBlock{
+  background-image: url(../images/traviss.jpeg);
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 650px;
+  border-radius: 25px;
+
+}
+
+.forFlex{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.forFlex .artist{
+  margin-left: 20px;
+  color: black;
+}
+
+.forFlex .artistName{
+  margin-right: 20px;
+  opacity: .8;
+}
+.whiteBlock{
+  height: 100px;
+  width: 650px;
+  background: white;
+  border-radius: 15px;
+}
+
+.artistBlock .top{
+  font-weight: bold;
+  font-size: 25px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.btn{
+  margin-left: 20px;
+  padding: 7px 25px;
+  border-radius: 15px;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+
+}
+.active{
+  border: 2px solid #ba23ab;
+  background-color: #f02982;
+}
+.tags{
+  font-size: 30px;
+  font-weight: lighter;
+}
+.played{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.played .played{
+  font-size: 25px;
+  margin-right: 75px;
+}
+
+.played .showAll{
+  margin-top: 35px;
+}
+
+.playedRecently .whiteButton{
+  width: 50px;
+  height: 50px;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 7px;
+}
+
+.wrapper p{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color:black;
+  margin: 8px 10px;
+  background: white;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.space{
+  margin-top: 20px;
+}
+
+.image img{
+  max-width: 100%;
+  max-height: 100%;
+   border-radius: 15px;
+}
+.image{
+   width: 200px;
+   height: 300px;
+
+}
+
+
+
+/* slider */
+
+.slick-prev {
+    left: -60px !important;
+}
+
+ .slick-next {
+    right: -60px !important;
+}
+
+/* Отступы стрелочек для планшетов и моб */
+@media screen and (max-width: 1280px) {
+  .slick-prev {
+    left: -30px !important;
+  }
+
+  .slick-next {
+    right: -30px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slick-prev {
+    left: 0px !important;
+  }
+
+  .slick-next {
+    right: 0px !important;
+  }
+
+  }
+}

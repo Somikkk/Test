@@ -1,0 +1,107 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    background-image: url(images/fon.jpg);
+    background-size: cover;
+}
+
+.navi a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.navi a:hover{
+    color: gold;
+    transition: 0.3s;
+}
+
+.about{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+.about b{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.mainHeader {
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+.mainText{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+}
+
+.mainHeader{
+    margin-left: 50px;
+    font-style: italic;
+
+}
+
+.mainConteiner h3{
+    margin-left: 50px;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+footer{
+    border: 1px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    width: 1000px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columnWrapper{
+    text-align: center;
+}
+
+.column{
+    width: 250px;
+    border-right: 2px solid #222222;
+    display: inline-block;
+    margin-top: 0px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.column:last-child{
+    width: 180px;
+    border-right: 0px solid #222222;
+    display: inline-block;
+    margin-top: 0px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.copyrightText{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 0.7em;
+    color: #555555;
+    text-align: center;
+}
